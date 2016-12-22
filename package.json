@@ -39,7 +39,7 @@
     "loader.js": "^4.0.1",
     "nullbase-basic-layout": "https://github.com/nullrocket/nullbase-basic-layout.git#0.0.0-alpha",
     "nullbase-button": "https://github.com/nullrocket/nullbase-button.git#0.0.0-alpha",
-    "nullbase-scroll-panel":"*"
+    "nullbase-scroll-panel":"https://github.com/nullrocket/nullbase-scroll-panel.git#0.0.0-alpha"
   },
   "keywords": [
     "ember-addon"
