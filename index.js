@@ -3,4 +3,5 @@
 
 module.exports = {
   name: 'nullbase-checkbox'
+
 };

@@ -1,0 +1,38 @@
+{{#nb-scroll-panel
+scrollingX=false
+scrollingY= true
+animating=true
+bouncing  = true
+locking = false
+
+}}
+<div class="content-wrapper elevation-1dp" style="margin:24px;">
+  <h2>Examples</h2>
+  <div style="max-width:250px;">
+    <div>
+      {{nb-checkbox label="Default" checked=checked on-tap=(action "toggleCheckbox")  }}
+    </div>
+    <div>
+      {{nb-checkbox label="Custom icons" checked=checkedCustomIcons checkedIcon=(icon "volume" "blue") uncheckedIcon=(icon "volume-off" "blue") on-tap=(action "toggleCheckboxCustomIcons") }}
+    </div>
+    <div>
+      {{nb-checkbox label="Custom colors" checked=checkedCustomColors checkedIcon=(icon "sync" "green") uncheckedIcon=(icon "sync-off" "red")  on-tap=(action "toggleCheckboxCustomColors") }}
+    </div>
+    <div>
+      {{nb-checkbox label="Disabled checked" checked=true disabled=true on-tap=(action "toggleCheckbox2") }}
+    </div>
+    <div>
+      {{nb-checkbox label="Disabled unchecked" checked=false disabled=true on-tap=(action "toggleCheckbox2") }}
+    </div>
+    <div>
+      {{nb-checkbox label="Label on the left" labelPosition="left" checked=checkedCheckOnLeft on-tap=(action "toggleCheckboxOnLeft") }}
+    </div>
+    <div>
+      {{nb-checkbox label="Very long wrapped label in constrained width" checked=checked2 on-tap=(action "toggleCheckbox2") }}
+    </div>
+    <div>
+      {{nb-checkbox checked=checked on-tap=(action "toggleCheckbox") useNativeClick=true }}
+    </div>
+  </div>
+</div>
+  {{/nb-scroll-panel}}
