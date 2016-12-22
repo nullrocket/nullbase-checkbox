@@ -37,7 +37,7 @@
     "ember-resolver": "^2.0.3",
     "ember-route-action-helper": "2.0.0",
     "loader.js": "^4.0.1",
-    "nullbase-basic-layout": "*",
+    "nullbase-basic-layout": "https://github.com/nullrocket/nullbase-basic-layout.git#0.0.0-alpha",
     "nullbase-button": "https://github.com/nullrocket/nullbase-button.git#0.0.0-alpha",
     "nullbase-scroll-panel":"*"
   },
