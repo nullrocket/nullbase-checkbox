@@ -37,8 +37,9 @@ export default Ember.Component.extend(ThemedComponent, {
   }),
   checkedIcon: "checkbox-marked-grey",
   uncheckedIcon: "checkbox-blank-outline-grey",
-  _currentIcon: Ember.computed('uncheckedIcon', 'checkedIcon', 'checked', function() {
-    return this.get('checked') ? this.get('checkedIcon') : this.get('uncheckedIcon');
+  maybeCheckedIcon:"minux-box-outline-grey",
+  _currentIcon: Ember.computed('uncheckedIcon', 'checkedIcon', 'maybeCheckedIcon','checked', function() {
+    return this.get('checked') ? this.get('checkedIcon') : this.get('checked') != null?  this.get('uncheckedIcon') : this.get('maybeCheckedIcon');
   }),
 
 
