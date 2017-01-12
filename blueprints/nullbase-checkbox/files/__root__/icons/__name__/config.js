@@ -8,6 +8,10 @@ module.exports= {
     {
       name: 'checkbox-blank-outline',
       colors: [ { color: "#444", name: "grey" }, { color: "#ffffff", name: "white" }, { color: "#2196F3", name: "blue" } ]
+    },
+    {
+      name: 'minus-box',
+      colors: [ { color: "#444", name: "grey" }, { color: "#ffffff", name: "white" }, { color: "#2196F3", name: "blue" } ]
     }
   ]
 };
