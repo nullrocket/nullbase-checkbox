@@ -19,7 +19,7 @@ export default Ember.Route.extend({
     }
   },
   renderTemplate(){
-    console.log('application route');
+
     this._super(...arguments);
   /*  this.render('dummy-sidebar', {
       outlet: 'left-sidebar',

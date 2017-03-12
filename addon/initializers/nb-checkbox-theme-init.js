@@ -137,7 +137,7 @@ var ThemeHandler = Ember.Object.extend(ThemeHandlerMixin,{
 
 
 export function initialize( application ) {
-  console.log('Initializing nb-checkbox-theme-init');
+
   application.register('nb-checkbox-theme-init:main', ThemeHandler, { instantiate: true });
   application.inject('component:nb-checkbox', '_themeHandler', 'nb-checkbox-theme-init:main');
 }
