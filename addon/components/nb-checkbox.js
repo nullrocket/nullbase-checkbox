@@ -25,14 +25,14 @@ export default Ember.Component.extend(ThemedComponent, {
     var self = this;
     if ( this.get('checked') ) {
       requestAnimationFrame(function () {
-        if(self.$('.button-icon').length) {
+        if(self && !self.get('isDestroying') && !self.get('isDestroyed') && self.$('.button-icon').length) {
           self.$('.button-icon').addClass('animate');
         }
       });
     }
     else {
       requestAnimationFrame(function () {
-        if(self.$('.button-icon').length) {
+        if(self && !self.get('isDestroying') && !self.get('isDestroyed') && self.$('.button-icon').length) {
           self.$('.button-icon').removeClass('animate');
         }
       });
