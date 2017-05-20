@@ -25,12 +25,16 @@ export default Ember.Component.extend(ThemedComponent, {
     var self = this;
     if ( this.get('checked') ) {
       requestAnimationFrame(function () {
-        self.$('.button-icon').addClass('animate');
+        if(self.$('.button-icon').length) {
+          self.$('.button-icon').addClass('animate');
+        }
       });
     }
     else {
       requestAnimationFrame(function () {
-        self.$('.button-icon').removeClass('animate');
+        if(self.$('.button-icon').length) {
+          self.$('.button-icon').removeClass('animate');
+        }
       });
     }
 
